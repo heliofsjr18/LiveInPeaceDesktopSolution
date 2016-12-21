@@ -46,12 +46,24 @@
     <Compile Include="BasicLayer\User.cs" />
     <Compile Include="BasicLayer\UserType.cs" />
     <Compile Include="BasicLayer\Warning.cs" />
+    <Compile Include="ConnectionLayer\ConnectionClass.cs" />
+    <Compile Include="ConnectionLayer\DBInit.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBInit.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionLayer\IConnectionClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BusinessLayer\" />
-    <Folder Include="ConnectionLayer\" />
     <Folder Include="DataLayer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectionLayer\DBInit.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DBInit.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

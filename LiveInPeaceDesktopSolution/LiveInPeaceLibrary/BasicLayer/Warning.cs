@@ -6,8 +6,21 @@ using System.Threading.Tasks;
 
 namespace LiveInPeaceLibrary.BasicLayer
 {
-    class Warning
+    public class Warning
     {
         String description;
+
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+
+            set
+            {
+                description = value;
+            }
+        }
     }
 }
