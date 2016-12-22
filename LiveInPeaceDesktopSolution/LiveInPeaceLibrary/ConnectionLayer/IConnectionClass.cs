@@ -9,7 +9,7 @@ using System.Data.SqlTypes;
 
 namespace LiveInPeaceLibrary.ConnectionLayer
 {
-    interface IConnectionClass
+    public interface IConnectionClass
     {
         SqlConnection connect();
         void disconnect(SqlConnection connection);

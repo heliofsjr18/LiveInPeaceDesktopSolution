@@ -15,6 +15,12 @@ namespace LiveInPeaceLibrary.BasicLayer
         UserType userType;
         ResidenceUnit residenceUnit;
 
+        public User()
+        {
+            userType = new UserType();
+            residenceUnit = new ResidenceUnit();
+        }
+
         public string Name
         {
             get

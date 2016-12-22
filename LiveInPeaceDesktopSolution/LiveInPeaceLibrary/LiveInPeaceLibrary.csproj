@@ -53,11 +53,16 @@
       <DependentUpon>DBInit.resx</DependentUpon>
     </Compile>
     <Compile Include="ConnectionLayer\IConnectionClass.cs" />
+    <Compile Include="DataLayer\IDAOFine.cs" />
+    <Compile Include="DataLayer\IDAOOccurrence.cs" />
+    <Compile Include="DataLayer\IDAOResidenceUnit.cs" />
+    <Compile Include="DataLayer\IDAOUser.cs" />
+    <Compile Include="DataLayer\IDAOUserType.cs" />
+    <Compile Include="DataLayer\IDAOWarning.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="BusinessLayer\" />
-    <Folder Include="DataLayer\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ConnectionLayer\DBInit.resx">

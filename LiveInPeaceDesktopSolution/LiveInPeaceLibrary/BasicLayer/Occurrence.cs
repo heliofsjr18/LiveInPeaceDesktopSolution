@@ -16,6 +16,14 @@ namespace LiveInPeaceLibrary.BasicLayer
         Int32 number;
         String description;
 
+        public Occurrence()
+        {
+            fine = new Fine();
+            warning = new Warning();
+            user = new User();
+            residenceUnit = new ResidenceUnit();
+        }
+
         public Fine Fine
         {
             get
